@@ -24,7 +24,7 @@ a:hover {
 a:active {
     text-decoration:none;
     background:#72090B;
-    color:#FFF;
+    color:#FFFFFF;
 }
 
 p {
@@ -49,34 +49,31 @@ strong {
 
 .triptych {
 	width: 85%;
-	margin: 50px 0px 50px 0px;
+	margin: 70px 0px 70px 0px;
 }
 
 div {
 	margin: auto;
+	display: block;
 }
 
 #header {
-	display: block;
 	border: #d84f52 1px solid;
 	width: 60%;
-	margin-top: 20px;
+	margin-top: 0px;
 }
 
 #letter {
-	display: block;
 	width: 50%;
 	padding: 30px 0px 0px 0px;
 }
 
 #footer {
-	display: block;
 	background-color: #72090B;
 	margin: 50px 0px 0px 0px;
 }
 
 .content {
-	display: block;
 	width: 50%;
 	padding: 30px 0px 30px 0px;
 }
@@ -100,6 +97,44 @@ a.whitelink:active {
     color:#72090B;
 }
 
+#navbox {
+	position: fixed;
+	left: 0;
+	right: 0;
+	margin:auto;
+	margin-top: 4px;
+	z-index: 7;
+}
+
+ul.navul {
+	font-size: 0.875em;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+li.navli {
+	display: inline;
+	padding: 4px 10px 5px 10px;
+	margin: 0px 2px 0px 2px;
+	color: #FFFFFF;
+	background-color: #d84f52;
+}
+
+li.navli:hover {
+	background-color: #72090B;
+}
+
+li.navli:active {
+	color: #72090B;
+	background-color: #FFFFFF;
+}
+
+a.nav:active {
+	background-color: #FFFFFF;
+}
+
 
 </style>
 
@@ -117,8 +152,20 @@ a.whitelink:active {
 </head>
 
 <body>
+<div id="navbox">
+	<ul class="navul">
+    	<a class="nav" href="http://rossgoodwin.com" target="_blank"><li class="navli">home</li></a>
+        <a class="nav" href="CV_RossGoodwin_Apr2014.pdf" target="_blank"><li class="navli">r&eacute;sum&eacute;</li></a>
+        <a class="nav" href="http://rgpl.us/portfolio" target="_blank"><li class="navli">portfolio</li></a>
+        <a class="nav" href="http://5point6.tumblr.com" target="_blank"><li class="navli">photoblog</li></a>
+        <a class="nav" href="http://www.linkedin.com/in/rossegoodwin" target="_blank"><li class="navli">linkedin</li></a>
+        <a class="nav" href="http://twitter.com/manifestists" target="_blank"><li class="navli">twitter</li></a>
+        <a class="nav" href="http://en.lichess.org/@/themadstork" target="_blank"><li class="navli">chess</li></a>
+        <a class="nav" href="mailto:ross.goodwin@gmail.com" target="_blank"><li class="navli">contact</li></a>
+	</ul>
+</div>
 <div id="header">
-	<a href="http://society6.com/rgplus/Triptych-No-1_Print" target="_blank">
+	<a class="nav" href="http://society6.com/rgplus/Triptych-No-1_Print" target="_blank">
     <img class="triptych" src="Triptych No 1.jpg" alt="Triptych No. 1"/>
     </a>
 </div>
@@ -127,7 +174,7 @@ a.whitelink:active {
     </p>
     <p>I hope this finds you well. My name is <a href="http://www.rossgoodwin.com">Ross Goodwin</a>, &amp; I am pleased to inform you that you have reached my webpage.
     </p>
-    <p>My primary interests include communication, technology, &amp; design. I also enjoy taking photographs &amp; playing chess. My <a href="CV_RossGoodwin_Apr2014.pdf" target="_blank">r&eacute;sum&eacute;</a> provides a detailed synopsis of my professional &amp; academic experience, while my <a href="http://rgpl.us/portfolio" target="_blank">creative portfolio</a> contains a catalog of my projects &amp; activities.
+    <p>My primary interests include communication, technology, &amp; design. I also enjoy taking <a href="http://5point6.tumblr.com" target="_blank">photographs</a>, playing <a href="http://en.lichess.org/@/themadstork" target="_blank">chess</a>, reading fiction &amp; trying to <a href="http://rgpl.us/tagged/horizontal-writing" target="_blank">write</a> it. My <a href="CV_RossGoodwin_Apr2014.pdf" target="_blank">r&eacute;sum&eacute;</a> provides a detailed synopsis of my professional &amp; academic experience, while my <a href="http://rgpl.us/portfolio" target="_blank">portfolio</a> contains a catalog of my projects &amp; activities.
     </p>
     <p>If you have any questions or need more information, please do not hesitate to <a href="mailto:ross.goodwin@gmail.com" target="_blank">email me</a>. Thank you for visiting.
     </p>
