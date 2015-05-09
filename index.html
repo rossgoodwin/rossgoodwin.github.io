@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Cousine:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 <title>Ross Goodwin</title>
 <style>
 
@@ -31,7 +31,7 @@ a:active {
 
 p {
 	font-size: 1em;
-	font-family: 'Lato', Courier, serif;
+	font-family: 'Cousine', Courier, monospace;
 	font-weight: 400;
 	color: #333333;
 	text-align:left;
@@ -39,7 +39,7 @@ p {
 
 ul.ulq {
 	font-size: 1em;
-	font-family: 'Lato', Courier, serif;
+	font-family: 'Cousine', Courier, monospace;
 	font-weight: 400;
 	color: #333333;
 	text-align: left;
@@ -61,10 +61,10 @@ img.triptych {
 	/*margin: 70px 70px 70px 70px;*/
 }
 
-img.triptych:hover {
+/*img.triptych:hover {
 	opacity: 0.4;
 	filter:alpha(opacity=40);
-}
+}*/
 
 a.triptych:active {
     color: #F2F1EF;
@@ -80,22 +80,24 @@ div {
 	/*border: #C0392B 1px solid;*/
 	width: 20%;
 	margin-top: 0px;
+    margin-left: 100px;
     /*background-color: #FFFFFF;*/
 }
 
 #letter {
 	width: 35%;
-	padding: 30px 0px 0px 0px;
+    margin-top: 25px;
+	padding: 0px 0px 0px 0px;
 }
 
 #footer {
 	background-color: #96281B;
-	margin: 50px 0px 0px 0px;
+	margin: 150px 0px 0px 0px;
 }
 
 .content {
 	width: 35%;
-	padding: 30px 0px 30px 0px;
+	padding: 50px 0px 50px 0px;
 }
 
 .white {
@@ -108,45 +110,58 @@ a.whitelink {
 }
 
 a.whitelink:hover {
-	color: #C8F7C5;
+	color: #E74C3C;
 }
 
 a.whitelink:active {
     text-decoration:none;
-    background:#C8F7C5;
+    background:#E74C3C;
     color:#96281B;
 }
 
 #navbox {
 	position: fixed;
-	left: 0;
 	right: 0;
+    top: 2px;
 	margin:auto;
-	margin-top: 4px;
+    /*margin-top:5px;*/
 	z-index: 7;
 }
 
 ul.navul {
 	font-size: 0.875em;
-	font-family: 'Lato', Courier, serif;
+    font-family: 'Cousine', Courier, monospace;
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	text-align: center;
+    border-top: #333333 solid 1px;
+    border-bottom: #333333 solid 1px;
+    width: 300px;
+	margin: 2px auto 2px auto;
+	padding: 2px 2px 5px 2px;
 }
 
 li.navli {
-	display: inline;
-	padding: 4px 10px 5px 10px;
-	margin: 0px 2px 0px 2px;
-	color: #F2F1EF;
-	background-color: #C0392B;
-	opacity: 0.9;
-	filter:alpha(opacity=90);
+	display: block;
+    text-align: right;
+	padding: 6px 10px 5px 10px;
+	margin: 2px 100px 2px auto;
+    width: auto;
+	color: #FFFFFF;
+	background-color: rgba(192, 57, 43, 0.7);
+    /*outline: #FFFFFF solid 1px;*/
+	/*opacity: 0.7;*/
+	/*filter:alpha(opacity=90);*/
 }
 
 li.navli:hover {
 	background-color: #4DAF7C;
+}
+
+li.activetab {
+    background-color: #4DAF7C;    
+}
+
+li.activetab:hover {
+    background-color: #C0392B;
 }
 
 li.navli:active {
@@ -177,17 +192,21 @@ a.nav:active {
 <body>
 <div id="navbox">
 	<ul class="navul">
-    	<a class="nav" href="http://rossgoodwin.com"><li class="navli">home</li></a>
-        <a class="nav" href="http://www.thehypertext.com"><li class="navli">itp blog</li></a>
-        <a class="nav" href="CV_RossGoodwin_Jan2015.pdf" target="_blank"><li class="navli">r&eacute;sum&eacute;</li></a>
-        <a class="nav" href="http://5point6.tumblr.com" target="_blank"><li class="navli">photoblog</li></a>
+        <a class="nav" href="http://www.thehypertext.com"><li class="navli">blog (recent projects)</li></a>
         <a class="nav" href="https://github.com/rossgoodwin" target="_blank"><li class="navli">github</li></a>
+        <a class="nav" href="CV_RossGoodwin_Jan2015.pdf" target="_blank"><li class="navli">r&eacute;sum&eacute;</li></a>
         <a class="nav" href="http://www.linkedin.com/in/rossegoodwin" target="_blank"><li class="navli">linkedin</li></a>
         <a class="nav" href="http://twitter.com/rossgoodwin" target="_blank"><li class="navli">twitter</li></a>
+        <a class="nav" href="http://5point6.tumblr.com" target="_blank"><li class="navli">photoblog</li></a>
         <a class="nav" href="http://rgpl.us/portfolio" target="_blank"><li class="navli">old portfolio</li></a>
-        <a class="nav" href="http://en.lichess.org/@/themadstork" target="_blank"><li class="navli">chess</li></a>
+        <a class="nav" href="http://en.lichess.org/@/themadstork" target="_blank"><li class="navli">chess?</li></a>
         <a class="nav" href="mailto:ross.goodwin@gmail.com" target="_blank"><li class="navli">contact</li></a>
 	</ul>
+
+    <ul class="lowerul">
+
+
+    </ul>
 </div>
 <div id="header">
 	<!--<a class="nav" href="http://www.saatchiart.com/art/Photography-Triptych-No-1/717808/2079196/view" target="_blank">-->
@@ -195,6 +214,11 @@ a.nav:active {
     <!--</a>-->
 </div>
 <div id="letter">
+    <p style="text-align: center;">
+    c/o ITP<br/>
+    721 Broadway, 4th Floor<br/>
+    New York, NY 10003<br/><br/>
+    </p>
 	<p style="text-align: center;">
 <script type="text/javascript">
 var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -206,8 +230,9 @@ var todaysDate = months[month] + " " + day + ", " + year
 document.write(todaysDate);
 </script>
     </p>
+    <p><br/></p>
     <p>
-    I am a creative technologist, artist, <a href="https://word.camera" target="_blank">language hacker</a>, &amp; current graduate student at <a href="http://itp.nyu.edu" target="_blank">NYU ITP.</a> Visit my <a href="http://www.thehypertext.com" target="_blank">ITP blog</a> to read about my recent projects.
+    I am a creative technologist, artist, <a href="https://word.camera" target="_blank">language hacker</a>, &amp; current graduate student at <a href="http://itp.nyu.edu" target="_blank">NYU ITP</a>. Visit my <a href="http://www.thehypertext.com" target="_blank">ITP blog</a> to read about my recent projects.
     </p>
     <p>
     I also enjoy taking <a href="http://5point6.tumblr.com" target="_blank">photographs</a>, playing <a href="http://en.lichess.org/@/themadstork" target="_blank">chess</a>, reading fiction &amp; trying to write it. Before attending ITP, I was a ghostwriter in the Obama administration &amp; the private sector, then became interested in natural language processing. I earned my B.S. in economics from MIT in 2009. My <a href="CV_RossGoodwin_Jan2015.pdf" target="_blank">r&eacute;sum&eacute;</a> contains more details about my professional &amp; academic experience. 
