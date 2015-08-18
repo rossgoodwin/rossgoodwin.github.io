@@ -50,6 +50,7 @@ a:active {
 img.header-img {
     padding: 0px 20px 20px 20px;
     margin: 0px 20px 20px 20px;
+    width: 150px;
 }
 
 img.header-img:hover {
@@ -79,19 +80,19 @@ nav {
 }
 
 .xtra-space {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .more-xtra-space {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .white-bg {
     border-radius: 3px;
     background-color: #FFF;
-    padding: 40px;
+    padding: 15px;
     border: #D2D7D3 solid 1px;
     border-bottom: #D2D7D3 solid 3px;
     /*z-index: -1;*/
@@ -115,6 +116,34 @@ nav {
   .container {
     max-width: 900px;
   }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+    .white-bg {
+        border-radius: 3px;
+        background-color: #FFF;
+        padding: 40px;
+        border: #D2D7D3 solid 1px;
+        border-bottom: #D2D7D3 solid 3px;
+        /*z-index: -1;*/
+    }
+    .xtra-space {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .more-xtra-space {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    img.header-img {
+        padding: 0px 20px 20px 20px;
+        margin: 0px 20px 20px 20px;
+        width: 225px;
+    }
 }
 
 </style>
@@ -154,7 +183,7 @@ nav {
     <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-12 white-bg">
 
         <div class="text-center">
-            <a href="http://rossgoodwin.com"><img class="header-img" src="rg_logo.png" alt="rg logo" width="225px" /></a>
+            <a href="http://rossgoodwin.com"><img class="header-img" src="rg_logo.png" alt="rg logo" /></a>
         </div>
 
         <div class="more-xtra-space">
