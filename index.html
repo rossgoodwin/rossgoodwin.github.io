@@ -285,44 +285,44 @@ nav {
 
 </div>
 
-<script src="js/jquery-2.1.4.min.js"></script>
+<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
 <script src="js/bootstrap.min.js"></script>
 
 <script>
 
-(function(){
+// (function(){
 
-$.getJSON("projects.json", function(data){
+// $.getJSON("projects.json", function(data){
 
-    $.each(data, function(ix, obj) {
+//     $.each(data, function(ix, obj) {
 
-        if (obj['Documentation URL'] != '') {
-            var docChunk = ' <a target=\"_blank\" class="btn btn-xs btn-default" href=\"' + obj['Documentation URL'] + '\">documentation</a>';
-        } else {
-            var docChunk = '';
-        }
+//         if (obj['Documentation URL'] != '') {
+//             var docChunk = ' <a target=\"_blank\" class="btn btn-xs btn-default" href=\"' + obj['Documentation URL'] + '\">documentation</a>';
+//         } else {
+//             var docChunk = '';
+//         }
 
-        if (obj['Output URL'] != '') {
-            var outChunk = ' <a target=\"_blank\" class="btn btn-xs btn-default" href=\"' + obj['Output URL'] + '\">output</a>';
-        } else {
-            var outChunk = '';
-        }
+//         if (obj['Output URL'] != '') {
+//             var outChunk = ' <a target=\"_blank\" class="btn btn-xs btn-default" href=\"' + obj['Output URL'] + '\">output</a>';
+//         } else {
+//             var outChunk = '';
+//         }
 
-        if (obj['Code URL'] != '') {
-            var codeChunk = ' <a target=\"_blank\" class="btn btn-xs btn-default" href=\"' + obj['Code URL'] + '\">code</a>';
-        } else {
-            var codeChunk = '';
-        }
+//         if (obj['Code URL'] != '') {
+//             var codeChunk = ' <a target=\"_blank\" class="btn btn-xs btn-default" href=\"' + obj['Code URL'] + '\">code</a>';
+//         } else {
+//             var codeChunk = '';
+//         }
 
-        $('#'+obj['XS S M L XL']).append(
-            '<p class="project-desc"><a target=\"_blank\" class="btn btn-xs btn-danger" href=\"'+obj['Main URL']+'\">'+obj['Name']+'</a>'+ docChunk + outChunk + codeChunk + '<br>' + obj['Description']+'</p>'
-        );
+//         $('#'+obj['XS S M L XL']).append(
+//             '<p class="project-desc"><a target=\"_blank\" class="btn btn-xs btn-danger" href=\"'+obj['Main URL']+'\">'+obj['Name']+'</a>'+ docChunk + outChunk + codeChunk + '<br>' + obj['Description']+'</p>'
+//         );
 
-    });
+//     });
 
-});
+// });
 
-})();
+// })();
 
 </script>
 
