@@ -167,15 +167,15 @@ nav {
 
 <nav class="pull-right">
     <ul class="nav nav-pills nav-stacked">
-        <li><a href="mailto:ross.goodwin@gmail.com" target="_blank">contact</a></li>
-        <li><a href="http://twitter.com/rossgoodwin" target="_blank">twitter</a></li>
-        <li><a href="https://github.com/rossgoodwin" target="_blank">github</a></li>
-        <li><a href="https://medium.com/@rossgoodwin/">essays</a></li>
-        <li><a href="http://en.lichess.org/@/themadstork" target="_blank">chess</a></li>
-        <li><a href="http://www.thehypertext.com">itp blog</a></li>
-        <li><a href="http://5point6.tumblr.com" target="_blank">photoblog</a></li>
+        <li><a href="mailto:ross.goodwin@gmail.com" target="_blank"><img class="nav-img" src="contact_dark.png" alt="contact"></a></li>
+        <li><a href="http://twitter.com/rossgoodwin" target="_blank"><img class="nav-img" src="twitter_dark.png" alt="twitter"></a></li>
+        <li><a href="https://github.com/rossgoodwin" target="_blank"><img class="nav-img" src="github_dark.png" alt="github"></a></li>
+        <li><a href="https://medium.com/@rossgoodwin/"><img class="nav-img" src="essays_dark.png" alt="github"></a></li>
+        <li><a href="http://en.lichess.org/@/themadstork" target="_blank"><img class="nav-img" src="chess_dark.png" alt="chess"></a></li>
+        <li><a href="http://www.thehypertext.com"><img class="nav-img" src="blog_dark.png" alt="itp blog"></a></li>
+        <li><a href="http://5point6.tumblr.com" target="_blank"><img class="nav-img" src="photoblog_dark.png" alt="photoblog"></a></li>
         <!-- <li><a href="CV_RossGoodwin_Jan2015.pdf" target="_blank">r&eacute;sum&eacute;</a></li> -->
-        <li><a href="http://rgpl.us/portfolio" target="_blank">old portfolio</a></li>
+        <li><a href="http://rgpl.us/portfolio" target="_blank"><img class="nav-img" src="old_dark.png" alt="old portfolio"></a></li>
     </ul>
 </nav>
 
@@ -286,10 +286,25 @@ nav {
 
 </div>
 
-<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
+<script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
 <script>
+
+(function(){
+
+    var imgs = $("img.nav-img");
+    $.each(imgs, function(x){
+        x.hover(function(){
+            var curSrc = $(this).attr('src');
+            $(this).attr('src', curSrc.replace('_dark', '_light'));
+        }, function(){
+            var curSrc = $(this).attr('src');
+            $(this).attr('src', curSrc.replace('_light', '_dark'));
+        });
+    });
+
+})();
 
 // (function(){
 
