@@ -286,22 +286,22 @@ nav {
 
 </div>
 
-<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
 <script>
 
 (function(){
 
-    var imgs = $("img.nav-img");
-    $.each(imgs, function(x){
-        x.hover(function(){
-            var curSrc = $(this).attr('src');
-            $(this).attr('src', curSrc.replace('_dark', '_light'));
-        }, function(){
-            var curSrc = $(this).attr('src');
-            $(this).attr('src', curSrc.replace('_light', '_dark'));
-        });
+    var imgs = $("nav > ul > li");
+    imgs.hover(function(){
+        var curImg = $(this).find("img");
+        var curSrc = curImg.attr("src");
+        curImg.attr('src', curSrc.replace('_dark', '_light'));
+    }, function(){
+        var curImg = $(this).find("img");
+        var curSrc = curImg.attr("src");
+        curImg.attr('src', curSrc.replace('_light', '_dark'));
     });
 
 })();
